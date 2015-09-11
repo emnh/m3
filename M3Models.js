@@ -117,7 +117,7 @@ for (const model of M3Models) {
   }
 }
 
-const CORSPROXY = "http://crossorigin.me";
+const CORSPROXY = "http://crossorigin.me/";
 //const CORSPROXY = "http://alexis.lart.no:5179/";
 
 export function mpqFile(path) {
