@@ -125,12 +125,11 @@ export function mpqFile(path) {
     if (path === "ground.png" ||
         path === "sky.png" ||
         path === "water.png") {
-      const newPath = CORSPROXY + "http://viewer.hiveworkshop.com/images/" + path;
+      const newPath = "http://localhost:8000/view/" + path;
       return newPath;
     }
     //  note that for a file to be available, its m3 model must have been
     //  opened at least once in hiveworkshop viewer, for example:
     //  http://viewer.hiveworkshop.com/?q=Assets/units/zerg/baneling/baneling.m3
-    return CORSPROXY + "http://www.hiveworkshop.com/model_files/Liberty.SC2Mod/base.SC2Assets/" + path;
+    return "http://localhost:8000/mods/liberty.sc2mod/base.sc2assets/" + path;
 };
-
